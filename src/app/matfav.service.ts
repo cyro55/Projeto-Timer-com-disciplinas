@@ -6,7 +6,10 @@ interface Matfav{
 
 @Injectable()
 export class MatfavService {
-  list: Array<Matfav> = [];
+  list: Array<any> = ['Desenvolvimento para Dispositivos Móveis',
+  'Tópicos Especiais em Sistemas para Internet II',
+  'Desenvolvimento para Servidores II',
+  'Negocios e Marketing'];
 
   constructor() {}
   
@@ -14,7 +17,7 @@ export class MatfavService {
     return this.list;
   }
     add(title: string){
-    this.list.push({title});
+    this.list.push(title);
   }
   remove(index: number){
     this.list.splice(index, 1);

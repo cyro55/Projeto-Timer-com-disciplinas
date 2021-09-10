@@ -1,14 +1,13 @@
 <h2>Adicione suas matérias favoritas</h2>
 <div>
   <input #input type="text"/>
-  <button (click)="this.matfav.add(input.value); input.value='';">Adicionar</button>
+  <button (click)="this.matservice.add(input.value); input.value='';">Adicionar</button>
 </div>
 <ul>
-  <li *ngFor="let matfav of this.matfav.getList(),index as i">
-    {{matfav.title}}
-    <span>
-      Remover    
-    </span> 
+  <li *ngFor="let matfav of this.matservice.getList(),index as i">
+    {{matfav}}
+          <button (click)="this.matservice.remove(i)" style="cursor: pointer">Remover</button>
+      
   </li>
 
 </ul>

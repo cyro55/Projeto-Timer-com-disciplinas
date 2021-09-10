@@ -8,7 +8,7 @@ import { MatfavService } from '../matfav.service';
 })
 export class MatfavComponent implements OnInit {
 
-  constructor(public matfav: MatfavService) { }
+  constructor(public matservice: MatfavService) { }
 
   ngOnInit() {
   }
