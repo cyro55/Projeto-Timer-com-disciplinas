@@ -1,0 +1,8 @@
+<h1> Cyro Fernandes<br></h1>
+<a [routerLink]="['']">Home</a>  |
+<a [routerLink]="['materias']">Matérias do semestre</a>  |
+<a [routerLink]="['matfav']">Matérias favoritas</a>    |
+{{timer.getCount()}}s
+<button (click)="timer.start(1000)">Iniciar</button>
+<button (click)="timer.stop()">Parar</button>
+<router-outlet></router-outlet>
